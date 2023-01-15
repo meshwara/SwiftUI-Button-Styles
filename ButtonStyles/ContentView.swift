@@ -9,11 +9,23 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        VStack(spacing: 20) {
+            Button("Automatic Button") {
+            }
+            .buttonStyle(.automatic)
+
+            Button("Borderless Button") {
+            }
+            .buttonStyle(.borderless)
+            Button("Plain Button") {
+            }
+            .buttonStyle(.plain)
+            Button("Borderer Button") {
+            }
+            .buttonStyle(.bordered)
+            Button("Bordered Button") {
+            }
+            .buttonStyle(BorderedProminentButtonStyle())
         }
         .padding()
     }
