@@ -23,7 +23,7 @@ struct ContentView: View {
             Button("Borderer Button") {
             }
             .buttonStyle(.bordered)
-            Button("Bordered Button") {
+            Button("Bordered Prominent Button") {
             }
             .buttonStyle(BorderedProminentButtonStyle())
         }
